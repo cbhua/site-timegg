@@ -5,22 +5,6 @@ $(function(){
         menu: '#menu',
         loopBottom:true,
         'navigation': true,
-
-        afterLoad: function (anchorLink, index) {
-            if(index == 3){
-                $('.section3').find('.graduation3').delay(300).animate({
-                    opacity:0
-                }, 5000, 'easeOutExpo');
-            } // Anime of page3
-        },
-
-        onLeave: function(index, direction) {
-            if(index == 3){
-                $('.section3').find('.graduation3').delay(400).animate({
-                    opacity:1
-                }, 0, 'easeOutExpo');
-            } // Anime of page3
-        }
     });
 
     setInterval(function(){
